@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Presença</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/conteudo.css">
+    <link rel="stylesheet" href="css/lista.css">
+    <link rel="stylesheet" href="css/pop_up.css">
+</head>
+
+<body>
+    <header class="cabeçalho">
+        Lista de presença
+    </header>
+    <div class="conteudo">
+        <div class="formulario" id="meuFormulario">
+            <input type="text" id="numero" name="numero" maxlength="3" class="campo-input" placeholder="Nº"
+                required><br>
+            <input type="text" id="nome" name="nome" class="campo-input" placeholder="Nome" required><br>
+            <select id="turma" name="turma">
+                <option value="6º A">6º A</option>
+                <option value="6º B">6º B</option>
+                <option value="6º C">6º C</option>
+                <option value="6º D">6º D</option>
+                <option value="7º B">7º A</option>
+                <option value="7º A">7º B</option>
+                <option value="7º C">7º C</option>
+                <option value="7º D">7º D</option>
+                <option value="8º A">8º A</option>
+                <option value="8º B">8º B</option>
+                <option value="8º C">8º C</option>
+                <option value="8º D">8º D</option>
+                <option value="9º A">9º A</option>
+                <option value="9º B">9º B</option>
+                <option value="9º C">9º C</option>
+                <option value="9º D">9º D</option>
+                <option value="1º A - D. Sistemas">1º A - D. Sistemas</option>
+                <option value="1º A - N. Ensino Médio">1º A - N. Ensino Médio</option>
+                <option value="1º B - N. Ensino Médio">1º B - N. Ensino Médio</option>
+                <option value="1º C - N. Ensino Médio">1º C - N. Ensino Médio</option>
+                <option value="2º A - D. Sistemas">2º A - D. Sistemas</option>
+                <option value="2º A - N. Ensino Médio">2º A - N. Ensino Médio</option>
+            </select><br>
+            <input type="email" id="email" name="email" class="campo-input" placeholder="Email" required><br>
+
+            <button type="button" class="salvar" onclick="salvarDados()">Incluir</button>
+        </div>
+
+        <div class="informativo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quaerat non adipisci? Eius temporibus
+            fuga velit tempore, nihil assumenda ipsam ullam? Iste, dignissimos deleniti quos accusantium, harum
+            quisquam, totam non voluptatibus unde hic minus aliquam eaque reiciendis iure excepturi corrupti laudantium
+            maxime debitis sapiente odio? Perferendis, quasi, magnam error fugit nihil porro provident rerum excepturi a
+            cumque sed natus deserunt?
+        </div>
+    </div>
+    <Div class="lista">
+        <ul id="listaDados"></ul>
+    </div>
+
+    <!-- Popup de confirmação -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <button class="close" type="button" onclick="fecharPopup()">Fechar</button>
+            <p>Dados do formulário salvos temporariamente.</p>
+        </div>
+    </div>
+
+    <footer>&copy; Rillary Agostini - 2º A - D. Sistemas</footer>
+
+    <script src="javaScript/script.js"></script>
+    <script src="javaScript/ajustar_lista.js"></script>
+    <script src="javaScript/outra_turma.js"></script>
+</body>
+
+</html>
